@@ -4,11 +4,11 @@ Monte Carlo simulation project applying and comparing variance reduction techniq
 
 ## The Question
 
-If a retiree withdraws 4% of their portfolio annually (adjusted for inflation), what is the probability their savings outlast them? This project estimates that solvency rate via Monte Carlo simulation — and then asks a harder question: how do you get a *stable, trustworthy* estimate, not one that swings by a percentage point every time you rerun it?
+If a retiree withdraws 4% of their portfolio annually (adjusted for inflation), what is the probability their savings outlast them? This project estimates that solvency rate via Monte Carlo simulation and then asks a harder question: how do you get a stable, trustworthy estimate, not one that swings by a percentage point every time you rerun it?
 
 ## Approach
 
-A baseline simulation draws 10,000 random retiree paths (random lifetime × random monthly market returns) and tracks portfolio balance to determine solvency. Because every draw is random, repeated runs of the baseline produced solvency estimates ranging as much as **1.17 percentage points** across 15 runs — too much noise for confident financial advice.
+A baseline simulation draws 10,000 random retiree paths (random lifetime × random monthly market returns) and tracks portfolio balance to determine solvency. Because every draw is random, repeated runs of the baseline produced solvency estimates ranging as much as **1.17 percentage points** across 15 runs; too much noise for confident financial advice.
 
 Four variance reduction techniques were implemented and benchmarked against the baseline, each isolated in its own worksheet:
 
